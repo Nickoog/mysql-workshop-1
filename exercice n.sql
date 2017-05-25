@@ -65,17 +65,15 @@ CREATE TABLE Reservation(
     id INT,
     RoomID INT,
     StartRentalDate DATETIME,
-    EndRentalDate DATETIME,
+    EndRentalDate DATETIME
 );
 
 CREATE TABLE Room(
     id INT,
-    RoomID,
-    FloorID,
-    rentable BOOL,
-    kitchen BOOL,
-    window BOOL,
-    Carpets BOOL,
-    numberOfBed INT
-);
+    FloorNumber INT,
+    rentable TINYINT,
+    kitchen TINYINT,
+    windows INT,
+    Carpets TINYINT,
+    numberOfBeds INT
 );
